@@ -1,0 +1,253 @@
+
+.form-control {
+  font-size: 13px;
+  border:2px solid $inputbg;
+  padding:17px 20px;
+  height: auto !important;
+  border-radius:0px;
+  background-color:$inputbg;
+  color:$black-color;
+  font-weight: $font-weight-medium;
+  margin-bottom: 20px;
+  &:focus,
+  &:hover {
+    border-color:$primary-color;
+    box-shadow: none;
+    background-color:$white-color;
+  }
+  &.is-invalid,
+  &:invalid{
+background-image: none;
+  }
+}
+select{
+    &.form-control{
+       -webkit-appearance:none;
+        padding:17px 50px 17px 20px;
+        height: auto !important;
+        border-radius:0px;
+        background-color:$inputbg;
+        color:$black-color;
+        background-image: url(/images/down-arrow.png);
+        background-repeat: no-repeat;
+        background-position: 95% center;
+        background-size: 9px auto;
+    }
+}
+
+form{
+  label{
+    color:$primary2-color;
+    font-weight: $font-weight-medium;
+  }
+  span{
+    &.required-label{
+      color: red;
+    }
+  }
+
+}
+
+
+
+ textarea{
+   min-height: 180px;
+ }
+/*
+ input{
+   transition: all 0.3s ease;
+   -webkit-transition: all 0.3s ease;
+  &[type="submit"]{
+    background: $black-color;
+    color: $white-color;
+    padding: 15px 40px;
+    border:0;
+    font-weight: $font-weight-semibold;
+    text-transform: capitalize;
+    font-size: 14px;
+    &:hover{
+      background:$primary-color
+    }
+  }
+}*/
+
+.checkboxrow,
+.radioboxrow{
+   span{
+     display: inline-block;
+     position: relative;
+     padding-right: 15px;
+     input[type="checkbox"]{
+         position: absolute;
+         top:0;
+         left:0;
+         width:100%;
+         height: 100%;
+         opacity: 0;
+         z-index: 55;
+          + label{
+            padding: 0 0 0 30px;
+            position: relative;
+            &:before{
+              content: "";
+              width:20px;
+              height: 20px;
+              /*background: $primary-color;*/
+              position: absolute;
+              left:0;
+              top:0;
+              border: $primary-color solid;
+            }
+         }
+         &:checked{
+           + label{
+             &:before{
+              content:"";
+              background: $primary2-color;
+             }
+           }
+         }
+       }
+       input[type="radio"]{
+        position: absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height: 100%;
+        opacity: 0;
+        z-index: 55;
+         + label{
+           padding: 0 0 0 30px;
+           position: relative;
+           &:before{
+             content: "";
+             width:20px;
+             height: 20px;
+             /*background: $primary-color;*/
+             position: absolute;
+             left:0;
+             top:0;
+             border:3px $primary-color solid;
+             @include border-radius(100%);
+           }
+        }
+        &:checked{
+          + label{
+            &:before{
+             content:"";
+             background: $primary2-color;
+            }
+          }
+        }
+      }
+   }
+   .termslink{
+    margin-left: -11px;
+    font-weight: 600;
+    font-size: 15px;
+   }
+}
+
+.inquiryformdesign{
+    .form-control{ 
+        padding:11px 20px;
+      }
+      .small-fonts{
+        font-size: 10px !important;
+        font-weight: $font-weight-normal;
+        text-transform: none;
+        position:relative;
+        top:-18px;
+      }
+      .invalid-feedback{
+       position: relative;
+top: -15px;
+      }
+       textarea{
+          height:180px !important
+       }
+
+       .required:after {
+    content:" *";
+    color: red;
+  }
+}
+
+// Number with plus and minus buttons
+.cartpage .number-wrapper.input-group .quantity-field {
+  top: -1px;
+}
+
+.number-wrapper {
+  input,
+  textarea {
+    border: 1px solid #eeeeee;
+    box-sizing: border-box;
+    margin: 0;
+    outline: none;
+    padding: 10px;
+  }
+  
+  input[type="button"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+  }
+  
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+  
+  &.input-group {
+    clear: both;
+    margin: 0 0;
+    position: relative;
+    
+    input[type='button'] {
+      background-color: #eeeeee;
+      min-width: 42px;
+      width: auto;
+      transition: all 300ms ease;
+    }
+    
+    .button-minus,
+    .button-plus {
+      font-weight: bold;
+      height: 42px;
+      padding: 0;
+      width: 38px;
+      position: relative;
+    }
+    
+    .quantity-field {
+      position: relative;
+      height: 42px;
+      left: -6px;
+      text-align: center;
+      width: 62px;
+      display: inline-block;
+      font-size: 13px;
+      margin: 0 0 5px;
+      top: 0;
+      background: #fff;
+      resize: vertical;
+    }
+    
+  }
+  
+  .button-plus {
+    left: -13px;
+  }
+  
+  input[type="number"] {
+    -moz-appearance: textfield;
+    -webkit-appearance: none;
+  }
+}
+
+.cart-data {
+  .number-wrapper {
+    width: 160px;
+    display: inline-block;
+  } 
+}

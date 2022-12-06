@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <sitemap>
+        <loc>https://generalchem.com/pages_sitemap.xml</loc>
+    
+        <lastmod>2020-04-22T00:00:11-04:00</lastmod>
+    </sitemap>
+    <sitemap>
+        <loc>https://generalchem.com/categories_sitemap.xml</loc>
+    
+        <lastmod>2020-04-22T00:00:11-04:00</lastmod>
+    </sitemap>
+    <sitemap>
+        <loc>https://generalchem.com/products_sitemap.xml</loc>
+    
+        <lastmod>2020-04-22T00:00:11-04:00</lastmod>
+    </sitemap>
+    <sitemap>
+        <loc>https://generalchem.com/store_sitemap.xml</loc>
+    
+        <lastmod>2020-04-22T00:00:11-04:00</lastmod>
+    </sitemap>
+    <sitemap>
+        <loc>https://generalchem.com/generalchem.xml</loc>
+    
+        <lastmod>2020-04-22T00:00:11-04:00</lastmod>
+    </sitemap>
+</sitemapindex>

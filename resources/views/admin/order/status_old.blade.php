@@ -1,0 +1,1 @@
+{!! Form::select('status', $orderStatus, $orderItem->order_status_id, ["data-id" => $orderItem->id, 'class' => 'select2 form-control']) !!}

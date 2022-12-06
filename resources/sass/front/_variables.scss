@@ -1,0 +1,64 @@
+//## For each of Bootstrap's buttons, define text, background and border color.
+
+$body-text-color: #666666;
+$transparent-bg : transparent;
+$light-bg:#f0f5f9;
+$light-bg1:#f9fbfd;
+$light-bg2:#f7f7f7;
+$white-color: #ffffff;
+$primary-color : #3eabe2;
+$primary2-color :#393950;
+$light-blue:#2da0ed;
+$blue2:#2c96dd;
+$info-color : #48ABF7;
+$success-color : #31CE36;
+$warning-color : #FFAD46;
+$danger-color : #F25961;
+$nav-font-color:#2d3a4b;
+$black-color:#171e27;
+$inputbg: #f6f6f7;
+$gray1:#ededed;
+$tabborder:#dee2e6;
+
+
+// Font Weight
+$font-weight-light : 300;
+$font-weight-normal : 400;
+$font-weight-medium : 500;
+$font-weight-semibold : 600;
+$font-weight-bold : 700;
+$font-weight-extrabold : 900;
+
+//mixing
+@mixin transition($what, $time, $how) {
+    -webkit-transition: $what $time $how;
+    -moz-transition:    $what $time $how;
+    -ms-transition:     $what $time $how;
+    -o-transition:      $what $time $how;
+    transition:         $what $time $how;
+}
+@mixin transition($what, $time, $how) {
+  -webkit-transition: $what $time $how;
+  -moz-transition:    $what $time $how;
+  -ms-transition:     $what $time $how;
+  -o-transition:      $what $time $how;
+  transition:         $what $time $how;
+}
+
+
+@mixin box-shadow($x-axis, $y-axis, $blur, $color, $inset) {
+    box-shadow: $x-axis $y-axis $blur $color $inset;
+    -webkit-box-shadow: $x-axis $y-axis $blur $color $inset;
+    -moz-box-shadow: $x-axis $y-axis $blur $color $inset;
+    -o-box-shadow: $x-axis $y-axis $blur $color $inset;
+    -html-box-shadow: $x-axis $y-axis $blur $color $inset;
+  }
+
+
+
+  @mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    border-radius: $radius;
+  }
+
+  
